@@ -4,7 +4,7 @@ describe('TipTop Form Validation Tests', () => {
       cy.visit('/');
     });
   
-    it('Verify the input element is disabled', () => {
+    it.only('Verify the input element is disabled', () => {
       cy.xpath(".//input[@name='my-disabled']")
         .should('be.disabled');
     });

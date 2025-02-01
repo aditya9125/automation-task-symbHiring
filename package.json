@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-ui": "npx cypress run --spec cypress/integration/ui/*.js --browser chrome --headless",
+    "test-api": "npx cypress run --spec cypress/integration/api/**/*.js --browser chrome --headless"
   },
   "author": "pratapsofficial@gmail.com",
   "license": "ISC",
