@@ -8,12 +8,16 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
     },
     specPattern: "cypress/e2e/**/*.cy.js",
+    env:{
+      API_BASE_URL: 'https://reqres.in/api'
+    }
   },
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     reportDir: 'cypress/reports',
     overwrite: false,
-    html: true,
-    json: false
+    charts: true,
+    html: false,
+    json: true
   }
 });
