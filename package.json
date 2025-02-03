@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test-ui": "npx cypress run --spec cypress/integration/ui/*.js --browser chrome --headless",
-    "test-api": "npx cypress run --spec cypress/integration/api/**/*.js --browser chrome --headless"
+    "test-api": "npx cypress run --spec cypress/e2e/api/**/*.cy.js --browser chrome --headless"
   },
   "author": "pratapsofficial@gmail.com",
   "license": "ISC",
